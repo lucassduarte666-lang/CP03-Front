@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #18070b;
+    color: #f5eee5;
+    font-family: 'Lora', serif;
+    line-height: 1.7;
+}
+
+::selection {
+    background-color: #641d1d;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Bodoni Moda', serif;
+}
+
+h2 {
+    color: #d4b15b;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #d8c9c1;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background: #100407;
+    padding: 25px 8%;
+    border-bottom: 1px solid #5c3825;
+}
+
+.logo h1 {
+    color: #d4b15b;
+    font-size: 2rem;
+}
+
+.menu-principal a {
+    color: #f5eee5;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+/* DESTAQUE */
+.destaque {
+    min-height: 470px;
+    padding: 70px 10%;
+    text-align: center;
+    background: radial-gradient(ellipse at center, #54202b 0%, #2b0d16 50%, #18070b 100%);
+    border-bottom: 1px solid #5c3825;
+    gap: 140px;
+}
+
+.texto-destaque {
+    max-width: 750px;
+}
+
+.subtitulo {
+    color: #d4b15b;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+}
+
+.texto-destaque h2 {
+    color: #fff4df;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+/* NOSSA HISTÓRIA */
+.sobre {
+    max-width: 1000px;
+    margin: auto;
+    padding: 65px 25px;
+    text-align: center;
+}
+
+.sobre p {
+    margin-bottom: 15px;
+}
+
+/* NOSSO ARMAZÉM */
+.convite {
+    padding: 65px 10%;
+    text-align: center;
+    background: linear-gradient(120deg, #32101c, #18070b);
+}
+
+.convite p {
+    max-width: 650px;
+    margin: 0 auto 15px;
+}
+
+/* NOSSOS VINHOS */
+.secao-vinhos {
+    padding: 70px 8%;
+    text-align: center;
+    background: #210b12;
+}
+
+.descricao-vinhos {
+    margin-bottom: 35px;
+}
+
+.card-vinho {
+    background: linear-gradient(145deg, #35131e, #250b13);
+    border: 1px solid #583443;
+    border-radius: 10px;
+    padding: 30px 25px;
+    max-width: 340px;
+    box-shadow: 0 8px 20px #10040755;
+}
+
+.card-vinho h3 {
+    color: #d4b15b;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.card-vinho p {
+    font-size: 0.95rem;
+}
+
+.card-vinho img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/*  IMAGENS */
+.imagem-destaque {
+    width: 40%;
+    max-width: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 4px solid rgb(65, 50, 40);
+}
+
+.imagem-historia,
+.imagem-armazem {
+    width: 70%;
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 4px solid rgb(65, 50, 40);
+    margin: 20px 0 25px;
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 25px 8%;
+    background: #100407;
+    border-top: 1px solid #5c3825;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,97 @@
+/*  FLEXBOX: cabeçalho 
+   Logo à esquerda e menu à direita. */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FLEXBOX: menu  */
+.menu-principal {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+/* FLEXBOX: destaque
+   Texto e imagem lado a lado, centralizados. */
+.destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FLEXBOX: cards dos vinhos */
+.container-vinhos {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 30px;
+}
+
+/* Cada card é uma coluna (imagem, título, texto) com uma base de 240px */
+.card-vinho {
+    flex: 1 1 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  FLEXBOX: rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Transition: para deixar as transições suaves nos elementos interativos */
+.menu-principal a,
+.logo h1,
+.card-vinho,
+.card-vinho img {
+    transition: transform 0.3s ease, color 0.3s ease,
+                border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* PSEUDO-CLASSE :hover / :focus-visible nos links do menu 
+   Muda a cor para dourado e aumenta o link.
+   Transformação 1: scale para aumentar o tamanho*/
+.menu-principal a:hover,
+.menu-principal a:focus-visible {
+    color: #d4b15b;
+    transform: scale(1.1);
+}
+
+/* PSEUDO-CLASSE :hover no logo
+   Transformação 1: scale para aumentar levemente o tamanho */
+.logo h1:hover {
+    transform: scale(1.04);
+}
+
+/* PSEUDO-CLASSE :hover / :focus nos cards
+   Muda a borda, cria sombra e levantar o card.
+   Transformação 2: translateY para levanta o card.
+   O :focus permite o mesmo efeito para quem navega pelo teclado. */
+.card-vinho:hover,
+.card-vinho:focus {
+    transform: translateY(-10px);
+    border-color: #d4b15b;
+    box-shadow: 0 15px 30px #00000055;
+    outline: none;
+}
+
+/* Imagem do card quando o card recebe hover/foco 
+   Transformação 3: rotate + scale */
+.card-vinho:hover img,
+.card-vinho:focus img {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+/* PSEUDO-CLASSE :focus-visible nos links
+   Contorno dourado visível para navegação por teclado. */
+a:focus-visible {
+    outline: 2px solid #e0bd66;
+    outline-offset: 5px;
+}
+

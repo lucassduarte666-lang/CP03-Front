@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vinheria Agnello | Tradição em Vinhos</title>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Arquivos CSS: style.css (aparência) e flex-style.css (Flexbox + efeitos) -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/flex-style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO: logo e menu lado a lado (Flexbox) -->
+    <header class="cabecalho">
+
+        <div class="logo">
+            <h1>Vinheria Agnello</h1>
+        </div>
+
+        <nav class="menu-principal">
+            <a href="#inicio">Início</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#armazem">Nosso Armazém</a>
+            <a href="#vinhos">Nossos Vinhos</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- DESTAQUE: texto e imagem lado a lado (Flexbox) -->
+        <section id="inicio" class="destaque">
+
+            <div class="texto-destaque">
+                <p class="subtitulo">Uma tradição de mais de 15 anos</p>
+
+                <h2>A arte de apreciar um bom vinho</h2>
+
+                <p>
+                    Explore aromas, sabores e tradições com a Vinheria Agnello.
+                    Encontre o vinho ideal para tornar cada momento especial.
+                </p>
+            </div>
+
+            <img
+                class="imagem-destaque"
+                src="src/assets/vinhedo.avif"
+                alt="Vinhedo com fileiras de videiras"
+            >
+
+        </section>
+
+        <!-- NOSSA HISTÓRIA -->
+        <section id="historia" class="sobre">
+
+            <h2>Nossa História</h2>
+
+            <img
+                class="imagem-historia"
+                src="src/assets/adega.jpg"
+                alt="Garrafas de vinho organizadas em uma adega"
+            >
+
+            <p>
+                Há mais de 15 anos, a Vinheria Agnello compartilha sua paixão
+                pelo universo dos vinhos, construindo uma trajetória marcada
+                pela tradição, qualidade e dedicação aos clientes.
+            </p>
+
+            <p>
+                Nossa seleção reúne rótulos nacionais e internacionais,
+                valorizando diferentes uvas, regiões produtoras e vinícolas.
+            </p>
+
+            <p>
+                Mais do que oferecer vinhos, queremos proporcionar experiências
+                e ajudar cada cliente a descobrir novos sabores.
+            </p>
+
+        </section>
+
+        <!-- NOSSO ARMAZÉM -->
+        <section id="armazem" class="convite">
+
+            <h2>Nosso Armazém</h2>
+
+            <img
+                class="imagem-armazem"
+                src="src/assets/garrafas_vinho.jpg"
+                alt="Adega com garrafas de vinho armazenadas"
+            >
+
+            <p>
+                Um bom vinho merece cuidados especiais. A conservação adequada
+                ajuda a preservar seus aromas, sabores e características.
+            </p>
+
+            <p>
+                Por isso, é importante controlar a temperatura, evitar a
+                exposição à luz excessiva e reduzir vibrações, especialmente
+                no caso de vinhos raros e de maior valor.
+            </p>
+
+        </section>
+
+        <!-- NOSSOS VINHOS: cards em linha com Flexbox -->
+        <section id="vinhos" class="secao-vinhos">
+
+            <h2>Nossos Vinhos</h2>
+
+            <p class="descricao-vinhos">
+                Descubra diferentes estilos para acompanhar seus melhores momentos.
+            </p>
+
+            <div class="container-vinhos">
+
+                <article class="card-vinho" tabindex="0">
+                    <img src="src/assets/vinho_tinto.jpg" alt="Garrafa e taça de vinho tinto">
+                    <h3>Vinhos Tintos</h3>
+                    <p>
+                        Intensos e cheios de personalidade, combinam com
+                        refeições especiais e momentos de celebração.
+                    </p>
+                </article>
+
+                <article class="card-vinho" tabindex="0">
+                    <img src="src/assets/vinho_branco.jpg" alt="Garrafa e taça de vinho branco">
+                    <h3>Vinhos Brancos</h3>
+                    <p>
+                        Aromáticos e refrescantes, são ótimas opções para
+                        acompanhar peixes, queijos e encontros especiais.
+                    </p>
+                </article>
+
+                <article class="card-vinho" tabindex="0">
+                    <img src="src/assets/vinho_rose.jpg" alt="Garrafa e taça de vinho rosé">
+                    <h3>Vinhos Rosés</h3>
+                    <p>
+                        Delicados e versáteis, apresentam aromas frutados
+                        e combinam com diferentes ocasiões.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ: dois blocos lado a lado (Flexbox) -->
+    <footer class="rodape">
+        <p>Vinheria Agnello</p>
+        <p>Check-Point 03</p>
+    </footer>
+
+</body>
+
+</html>
