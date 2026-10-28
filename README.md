@@ -14,9 +14,9 @@ Criei uma página para levar aos amantes de vinho um pouco sobre a Vinheria Agne
 - Rodapé com justify-content: space-between
 
 ### Pseudo-classes
-- :hover e :focus-visible` nos links do menu
+- :hover e :focus-visible nos links do menu
 - :hover no logo
-- :hover e :focus` nos cards
+- :hover e :focus nos cards
 - :focus-visible nos links
 
 ### Transformações
